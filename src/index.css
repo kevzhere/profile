@@ -28,7 +28,6 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
   margin: 5%;
   flex-wrap: wrap;
 }
