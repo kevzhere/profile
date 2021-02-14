@@ -1,9 +1,3 @@
-.intro {
-  display: flex;
-  color: black;
-  height: 100vh;
-}
-
 .typing {
   position: relative;
   margin-left: 10px;

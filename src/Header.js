@@ -14,6 +14,10 @@ import { withRouter } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    opacity: 0.5,
+  },
+  backgroundColor: {
+    backgroundColor: '#131313',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -46,9 +50,8 @@ const Header = ({history}) => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" className={classes.backgroundColor} >
         <Toolbar>
-          
           <Typography variant="h6" className={classes.title}>
             KZ
           </Typography>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './typewriter.css';
 
 
-export const Typewriter = ({speed, words, reverse }) => { 
+export const Typewriter = ({startPhrase, speed, words, reverse, textColor }) => { 
   const [displayedWord, setDisplayedWord] = useState('');
   let wordIndex = 0;
   let charIndex = 0;
@@ -45,8 +45,13 @@ export const Typewriter = ({speed, words, reverse }) => {
   }, [words, speed])
 
   return (
-    <h1 className='typing'>
-      { displayedWord }
-    </h1>
+    <div style={{color: textColor}}>
+      <h1>
+        { startPhrase }
+        <span className='typing'>
+          { displayedWord }
+        </span>
+      </h1>
+    </div>
   )
 }
