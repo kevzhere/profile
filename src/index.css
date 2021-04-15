@@ -43,3 +43,57 @@ code {
   max-height: 75%;
   border-radius: 35%;
 }
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.card {
+  background: whitesmoke;
+  margin-bottom: 2rem;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 0.25rem;
+}
+
+.card:hover {
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card-center {
+  max-width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.card-footer {
+  padding: 1.5rem;
+}
+
+.card-footer p {
+  color: #9a9a9a;
+  font-style: italic;
+}
+
+.card img {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.img-container img {
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}

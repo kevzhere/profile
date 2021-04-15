@@ -1,14 +1,15 @@
 import React from 'react';
 import { Typewriter } from './typewriter/Typewriter';
-import profImg from './assets/prof.jpg'
+import profImg from './assets/prof.jpg';
 
 const Home = () => {
+  console.log('prof', profImg);
   
   return (
     <>
       <div className='container'>
         <div className='small-box'>
-          <img className='profile-image' src={profImg}/>
+          <img className='profile-image' src={profImg} alt='my pic'/>
         </div>
         <div>
           <div style={{ color: '#d0d0d0' }}>

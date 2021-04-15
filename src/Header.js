@@ -52,7 +52,7 @@ const Header = ({history}) => {
     <div className={classes.root}>
       <AppBar position="static" className={classes.backgroundColor} >
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className='clickable' className={classes.title} onClick={() => handleMenuItem('/')}>
             KZ
           </Typography>
           {isMobile ? (
